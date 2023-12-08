@@ -494,7 +494,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 .gradient-left {
   background-image: url(/src/assets/images/gradient-left.png);
   width: 100%;
-  height: 300vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -567,7 +567,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 
 .img-body {
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -881,12 +881,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   width: 45%;
 }.banner-2nd{
   height: 30vh;
-}.gradient-left {
-  background-image: url(/src/assets/images/gradient-left.png);
-  width: 100%;
-  height: 360vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 }
 @media (min-width :1301px) and (max-width: 1440px) {
@@ -1078,12 +1072,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   opacity: 1;
   translate: -50px 0px;
   transition: 1s;
-}.gradient-left {
-  background-image: url(/src/assets/images/gradient-left.png);
-  width: 100%;
-  height: 330vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 }
 
@@ -1148,13 +1136,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
     left: 100px;
   }
 }
-.gradient-left {
-  background-image: url(/src/assets/images/gradient-left.png);
-  width: 100%;
-  height: 330vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 }
 
 @media (min-width:481px) and (max-width: 767px) {
@@ -1171,13 +1152,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
     width: 100px;
     height: 37px;
   }
-.gradient-left {
-  background-image: url(/src/assets/images/gradient-left.png);
-  width: 100%;
-  height: 420vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}  .banner-2nd{
+  .banner-2nd{
   height: 80vh;
 }.light-img img{
   width: 90%;
@@ -1347,15 +1322,6 @@ padding-top: 20px;
       left: 50px;
     }
   }
-
-  .gradient-left {
-    background-image: url(/src/assets/images/gradient-left.png);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .token-main {
     width: 350px;
   }
