@@ -397,6 +397,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 
 .team1 {
   transition: transform 2s ease-in-out;
+  cursor: pointer;
 }
 
 .team1:hover .team1-main {
