@@ -1100,7 +1100,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   top: 0px;
   left: 120px;
 }.gradient-left {
-  background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+  background-image: url(/src/assets/images/gradient-left.png);
   width: 100%;
   height: 330vh;
   background-repeat: no-repeat;
@@ -1153,7 +1153,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
     height: 37px;
   }
 .gradient-left {
-  background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+  background-image: url(/src/assets/images/gradient-left.png);
   width: 100%;
   height: 420vh;
   background-repeat: no-repeat;
@@ -1330,7 +1330,7 @@ padding-top: 20px;
   }
 
   .gradient-left {
-    background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+    background-image: url(/src/assets/images/gradient-left.png);
     width: 100%;
     height: 420vh;
     background-repeat: no-repeat;
