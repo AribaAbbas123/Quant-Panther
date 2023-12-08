@@ -988,6 +988,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 }.mobile-text-h {
   width: 66%;
   margin-bottom: -200px;
+}.team1:hover .team1-main.border-right-h {
+  left: 185px;
+  top: -5px;
+}.token-text {
+  left: -10px;
+  bottom: -10px;
 }
 
 
