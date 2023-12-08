@@ -1,38 +1,1435 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.transition1s {
+  transition: 0.5s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-shadow {
+  box-shadow: 0px 7px 10px 0px rgba(184, 36, 208, 0.73);
+}
+
+.nav-btn {
+  background: linear-gradient(278deg, #B824D0 14.39%, #15101B 104.17%);
+  box-shadow: 0px 4.52065px 4.52065px 0px rgba(0, 0, 0, 0.40);
+  transition: 1s;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(272deg, #B824D0 -60.12%, #15101B 73.58%);
+  box-shadow: 0px 4.36819px 4.36819px 0px #B824D0;
+}
+
+.banner-width {
+  width: 50%;
+}
+
+.baner-shadow {
+  box-shadow: 0px 0px 21px 8px #FFB800;
+  animation: shadowChange infinite 6s;
+
+}
+.shadow-padding{
+  padding-top: 56px;
+}
+
+@keyframes shadowChange {
+  0% {
+    box-shadow: 0px 0px 21px 8px #FFB800;
+  }
+
+  25% {
+    box-shadow: 0px 0px 21px 8px #88ff00;
+  }
+
+  50% {
+    box-shadow: 0px 0px 21px 8px #00f7ff;
+  }
+
+  75% {
+    box-shadow: 0px 0px 21px 8px #ff3300;
+  }
+
+  100% {
+    box-shadow: 0px 0px 21px 8px #c300ff;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .lightChange{
+  animation: changeImg infinite 8s;
+  background-image: url(/src/assets/images/Light.png);
+}
+@keyframes changeImg {
+  0%{ 
+   background-image: url(/src/assets/images/Light.png);
+  }
+  20%{
+    background-image: url(/src/assets/images/Light-Blue.png);
+  }
+  40%{
+    background-image: url(/src/assets/images/Light-Pink.png);
+  }60%{
+    background-image: url(/src/assets/images/Light-Black.png);
+  }80%{
+    background-image: url(/src/assets/images/Light-L-blue.png);
+  }100%{
+    background-image: url(/src/assets/images/Light.png);
+  }
+} */
+
+.light-img {
+  bottom: 285px;
+  left: 420px;
 }
 
-.App-link {
-  color: #61dafb;
+.person {
+  mix-blend-mode: luminosity;
 }
 
-@keyframes App-logo-spin {
+.person-para {
+  margin-top: 150px;
+  width: 40%;
+}
+
+.linesleft {
+  background-image: url(/src/assets/images/lines-left.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.linescenter {
+  background-image: url(/src/assets/images/lines-center.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* mix-blend-mode: luminosity; */
+}
+
+.linesright {
+  background-image: url(/src/assets/images/lines-right.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card {
+  position: relative;
+  width: 240px;
+  height: 400px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  /* animation: rotateInfinite 5s infinite; */
+}
+
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 2s ease-in-out;
+}
+
+.card:hover .card__face {
+  transform: rotateY(180deg);
+
+}
+
+@keyframes rotateInfinite {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
+}
+
+.banner-h-p {
+  padding-top: 216px;
+}
+
+
+.light-style {
+  bottom: 0px;
+}
+
+.gradient {
+  /* background: radial-gradient(60.85% 60.85% at 38.7% 63.91%, #FB4CDE 0%, #8200AF 95.31%); */
+  /* filter: blur(333px); */
+  /* background-image: radial-gradient(farthest-corner at 100% 50%,#8200AF 0%, #000 100%);  */
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(149,55,163,1) 100%); */
+  /* background: rgb(0,0,0);
+background: linear-gradient(117deg, rgba(0,0,0,1) 0%, rgba(144,17,178,1) 76%, rgba(154,14,187,1) 100%); */
+  /* background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); */
+  background-image: url(/src/assets/images/gradient.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.activeClass {
+  font-size: 20px;
+  opacity: 1;
+  translate: -150px 0px;
+  transition: 1s;
+}
+
+.circle-Bottom-Ani {
+  animation: showHide 5s ease-in-out infinite;
+  right: -20px;
+  bottom: -35px;
+}
+
+@keyframes showHide {
+  0% {
+    transform: scale(0.2);
+  }
+
+  25% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+.circle-Bottom-Ani-m {
+  animation: showHide 5s ease-in-out infinite;
+  bottom: -35px;
+  left: 210px;
+}
+
+@keyframes showHide {
+  0% {
+    transform: scale(0.2);
+  }
+
+  25% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+.token-main {
+  width: 500px;
+}
+
+.team {
+  color: #F2D100;
+}
+
+.team-shadow {
+  transition: 0.5s;
+}
+
+.team-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #FFDC01;
+}
+
+.token-p-padding {
+  padding: 14px;
+  cursor: pointer;
+}
+
+.Marketing {
+  color: #C4B99E;
+  margin-right: 200px;
+}
+
+.Marketing-shadow {
+  transition: 0.5s;
+}
+
+.Marketing-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #C8BFA8, 0px 4px 4px 0px #C8BFA8, 0px 4px 4px 0px #C8BFA8;
+}
+
+.Bounty {
+  color: #D79225;
+  margin-right: 400px;
+}
+
+.Bounty-shadow {
+  transition: 0.5s;
+}
+
+.Bounty-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #D79225, 0px 4px 4px 0px #D79225, 0px 4px 4px 0px #D79225;
+}
+
+.Advisors {
+  color: #48FF2B;
+  margin-right: 300px;
+}
+
+.Advisors-shadow {
+  transition: 0.5s;
+}
+
+.Advisors-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #25FF01, 0px 4px 4px 0px #25FF01, 0px 4px 4px 0px #25FF01;
+}
+
+.Ecosystem {
+  color: #A93C14;
+  margin-right: 75px;
+}
+
+.Ecosystem-shadow {
+  transition: 0.5s;
+}
+
+.Ecosystem-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #A93C14, 0px 4px 4px 0px #A93C14, 0px 4px 4px 0px #A93C14;
+}
+
+.Staking-Rewards {
+  color: #8F2011;
+  margin-right: 370px;
+}
+
+.Staking-Rewards-shadow {
+  transition: 0.5s;
+}
+
+.Staking-Rewards-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #8F2011, 0px 4px 4px 0px #8F2011, 0px 4px 4px 0px #8F2011;
+}
+
+.Product-Development {
+  color: #BA5A0D;
+  margin-right: 75px;
+}
+
+.Product-Development-shadow {
+  transition: 0.5s;
+}
+
+.Product-Development-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #BA5A0D, 0px 4px 4px 0px #BA5A0D, 0px 4px 4px 0px #BA5A0D;
+}
+
+.Partnership {
+  color: #53903E;
+  margin-right: 300px;
+}
+
+.Partnership-shadow {
+  transition: 0.5s;
+}
+
+.Partnership-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #41FF00, 0px 4px 4px 0px #41FF00, 0px 4px 4px 0px #41FF00;
+}
+
+.Pre-sale {
+  color: #F846E6;
+  margin-right: 400px;
+}
+
+.Pre-sale-shadow {
+  transition: 0.5s;
+}
+
+.Pre-sale-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #FF00E6, 0px 4px 4px 0px #FF00E6;
+}
+
+.Public-Sale {
+  color: #88BBF8;
+  margin-right: 200px;
+}
+
+.Public-Sale-shadow {
+  transition: 0.5s;
+}
+
+.Public-Sale-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #0072FF, 0px 4px 4px 0px #0072FF, 0px 4px 4px 0px #0072FF;
+}
+
+.Liquidity {
+  color: #DBFF00;
+}
+
+.Liquidity-shadow {
+  transition: 0.5s;
+}
+
+.Liquidity-shadow:hover {
+  box-shadow: 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00;
+}
+
+.team1 {
+  transition: transform 2s ease-in-out;
+}
+
+.team1:hover .team1-main {
+  mix-blend-mode: luminosity;
+}
+
+.team1-img {
+  left: 50px;
+  top: 50px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.team1-img {
+  scale: 1.1;
+}
+
+.border-right {
+  left: 140px;
+  top: 25px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-right {
+  left: 170px;
+}
+
+.border-right-h {
+  left: 180px;
+  top: -5px;
+  transition: 1s;
+
+}
+
+.team1:hover .team1-main.border-right-h {
+  left: 210px;
+  top: -5px;
+}
+
+.border-left-h {
+  left: 30px;
+  top: 240px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-left-h {
+  left: 0px;
+}
+
+.border-left-2 {
+  left: 0px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-left-2 {
+  left: -30px;
+}
+
+.border-right-3 {
+  left: 140px;
+  top: 25px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-right-3 {
+  left: 140px;
+  top: 25px;
+}
+
+.border-right-h-3 {
+  left: 180px;
+  top: -5px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-right-h-3 {
+  left: 140px;
+  top: -5px;
+}
+
+.border-left-h-3 {
+  left: 10px;
+  top: 240px;
+  transition: 1s;
+}
+
+.team1:hover .team1-main.border-left-h-3 {
+  left: -10px;
+}
+
+.grid-row {
+  height: 300px;
+}
+
+.gradient-left {
+  background-image: url(/src/assets/images/gradient-left.png);
+  width: 100%;
+  height: 290vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border-right-advi {
+  left: 0px;
+  top: 0px;
+  transition: 1s;
+}
+
+.border-left-advi {
+  left: 230px;
+  top: 45px;
+}
+
+.advi-h-animat {
+  animation: movingLeftToRight 4s ease-in-out infinite forwards;
+  position: absolute;
+  top: 100px;
+}
+
+@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  20% {
+    /* left: 100px; */
+  }
+
+  40% {
+    /* left: 150px; */
+  }
+
+  60% {
+    /* left: 200px; */
+  }
+
+  75% {
+    /* left: 250px; */
+  }
+
+  to {
+    left: 300px;
+    /* left: 420px; */
+  }
+}
+
+.advi-p-animat {
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+  position: absolute;
+  top: 140px;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 380px;
+  }
+}
+
+.advi-Img-animat {
+  position: absolute;
+  left: 50px;
+  animation: movingBtT 4s ease-in-out infinite;
+}
+
+.img-body {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+@keyframes movingBtT {
+  0% {
+    /* transform: translateY(200px); */
+    top: 400px;
+  }
+
+  50% {
+    top: 50px;
+  }
+
+  75% {
+    top: 55px;
+  }
+
+  100% {
+    /* transform: translateY(-100px); */
+    top: -400px;
+  }
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.partner4-style {
+  background-color: white;
+  border: 2px solid purple;
+  border-radius: 60px;
+  width: 86px;
+  height: 64px;
+}
+
+.partner-1 {
+  transition: 2s;
+  cursor: pointer;
+}
+
+.line-1 {
+  transition: 1s ease-in-out;
+}
+
+.partner-1:hover .line-1 {
+  background: linear-gradient(180deg, #0569C6 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-2 {
+  background: linear-gradient(180deg, #24FF00 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.line-3 {
+  transition: 1s ease-in-out;
+}
+
+.partner-1:hover .line-3 {
+  background: linear-gradient(180deg, #FFD600 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.line-3 {
+  transition: 1s ease-in-out;
+}
+
+.partner-1:hover .line-4 {
+  background: linear-gradient(180deg, #2AF6FF -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-5 {
+  background: linear-gradient(180deg, #FF7A00 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-6 {
+  background: linear-gradient(180deg, #C60505 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-7 {
+  background: linear-gradient(180deg, #00E0FF -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-8 {
+  background: linear-gradient(180deg, #DCFF7A -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.partner-1:hover .line-9 {
+  background: linear-gradient(180deg, #C60505 -9.91%, rgba(255, 255, 255, 0.00) 77.8%);
+}
+
+.footer-gradient {
+  background-image: url(/src/assets/images/footer-gradient.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.input-footer-main {
+  width: 789px;
+  height: 50px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 8px 24px -4px rgba(255, 255, 255, 0.15), 0px 6px 12px -6px rgba(255, 255, 255, 0.25);
+}
+
+.input-footer {
+  width: 550px;
+}
+
+.input-btn {
+  box-shadow: 0px 8px 24px -4px rgba(255, 255, 255, 0.15), 0px 6px 12px -6px rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  width: 193px;
+  height: 43px;
+
+}
+
+.footer-icon svg {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-icon svg:hover {
+  color: #EB82FC;
+}
+
+.footer-p {
+  width: 52%;
+}
+
+.footer-icon-size {
+  width: 20px;
+  height: 20px;
+}
+
+.partner-1-img img {
+  height: 70px;
+}
+
+.img-body img {}
+
+.token-text {
+  left: 8px;
+  bottom: 0px;
+}
+
+.optimize-h {
+  top: 0px;
+  left: 200px;
+}
+
+.mobile-text-h {
+  width: 53%;
+  margin-bottom: -200px;
+}
+
+.mobile-top-img {
+  top: 120px;
+  left: -48px;
+}
+
+.Nft-p {
+  width: 40%;
+}
+
+.Nft-main-p {
+  width: 35%;
+}
+.token-main-tab{
+  width: 400px;
+}
+.Marketing-tab{
+  margin-right: 0px;
+  color: #C4B99E;
+}
+.Marketing-shadow-tab {
+  transition: 0.5s;
+}
+
+.Marketing-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #C8BFA8, 0px 4px 4px 0px #C8BFA8, 0px 4px 4px 0px #C8BFA8;
+}
+
+.Bounty-tab {
+  color: #D79225;
+  margin-right: 0px;
+}
+
+.Bounty-shadow-tab {
+  transition: 0.5s;
+}
+
+.Bounty-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #D79225, 0px 4px 4px 0px #D79225, 0px 4px 4px 0px #D79225;
+}
+
+.Advisors-tab {
+  color: #48FF2B;
+  margin-right: 0px;
+}
+
+.Advisors-shadow-tab {
+  transition: 0.5s;
+}
+
+.Advisors-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #25FF01, 0px 4px 4px 0px #25FF01, 0px 4px 4px 0px #25FF01;
+}
+
+.Ecosystem-tab {
+  color: #A93C14;
+  margin-right: 0px;
+}
+
+.Ecosystem-shadow-tab {
+  transition: 0.5s;
+}
+
+.Ecosystem-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #A93C14, 0px 4px 4px 0px #A93C14, 0px 4px 4px 0px #A93C14;
+}
+
+.Staking-Rewards-tab {
+  color: #8F2011;
+  margin-right: 0px;
+}
+
+.Staking-Rewards-shadow-tab {
+  transition: 0.5s;
+}
+
+.Staking-Rewards-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #8F2011, 0px 4px 4px 0px #8F2011, 0px 4px 4px 0px #8F2011;
+}
+
+.Product-Development-tab {
+  color: #BA5A0D;
+  margin-right: 0px;
+}
+
+.Product-Development-shadow-tab {
+  transition: 0.5s;
+}
+
+.Product-Development-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #BA5A0D, 0px 4px 4px 0px #BA5A0D, 0px 4px 4px 0px #BA5A0D;
+}
+
+.Partnership-tab {
+  color: #53903E;
+  margin-right: 0px;
+}
+
+.Partnership-shadow-tab {
+  transition: 0.5s;
+}
+
+.Partnership-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #41FF00, 0px 4px 4px 0px #41FF00, 0px 4px 4px 0px #41FF00;
+}
+
+.Pre-sale-tab {
+  color: #F846E6;
+  margin-right: 0px;
+}
+
+.Pre-sale-shadow-tab {
+  transition: 0.5s;
+}
+
+.Pre-sale-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #FF00E6, 0px 4px 4px 0px #FF00E6;
+}
+
+.Public-Sale-tab {
+  color: #88BBF8;
+  margin-right: 0px;
+}
+
+.Public-Sale-shadow-tab {
+  transition: 0.5s;
+}
+
+.Public-Sale-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #0072FF, 0px 4px 4px 0px #0072FF, 0px 4px 4px 0px #0072FF;
+}
+
+.Liquidity-tab {
+  color: #DBFF00;
+}
+
+.Liquidity-shadow-tab {
+  transition: 0.5s;
+}
+
+.Liquidity-shadow-tab:hover {
+  box-shadow: 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00;
+}
+
+/* iska upr upr  */
+/* @media only screen and (min-width: 1600px) { 
+
+
+} */
+@media (min-width:1441px) and (max-width: 1600px) {
+  .mobile-text-h {
+    width: 59%;
+    margin-bottom: -200px;
+}.Nft-main-p {
+  width: 45%;
+}.banner-2nd{
+  height: 30vh;
+}
+}
+@media (min-width :1301px) and (max-width: 1440px) {
+  .banner-2nd{
+    height: 30vh;
+  }.banner-width {
+    width: 65%;
+}.light-img {
+  bottom: 290px;
+  left: 410px;
+}
+.light-img img{
+  width: 80%;
+}.Nft-main-p {
+  width: 45%;
+}
+.advi-h-animat {
+  animation: movingLeftToRight 4s ease-in-out infinite forwards;
+  top: 100px;
+}
+
+@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 200px;
+  }
+}
+.advi-p-animat {
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+  position: absolute;
+  top: 140px;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 300px;
+  }
+}.mobile-text-h {
+  width: 65%;
+}
+
+}
+@media (min-width :1201px) and (max-width: 1300px) {
+  .banner-2nd{
+    height: 40vh;
+  }.banner-width {
+    width: 65%;
+}.light-img {
+  bottom: 245px;
+  left: 372px;
+}
+.light-img img{
+  width: 80%;
+}.advi-h-animat {
+  animation: movingLeftToRight 4s ease-in-out infinite forwards;
+  top: 100px;
+}.Nft-main-p {
+  width: 55%;
+}
+
+@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 200px;
+  }
+}
+.advi-p-animat {
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+  position: absolute;
+  top: 140px;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 250px;
+  }
+}.border-right-h {
+  left: 166px;
+  top: -5px;
+  transition: 1s;
+}.border-right-h-3 {
+  left: 168px;
+  top: -5px;
+  transition: 1s;
+}.mobile-text-h {
+  width: 66%;
+  margin-bottom: -200px;
+}
+
+
+}
+
+@media (min-width:1024px) and (max-width: 1200px) {
+  .banner-2nd{
+    height: 60vh;
+  }.banner-h-p {
+    padding-top: 60px;
+  }
+.light-img img{
+  width: 70%;
+}.banner-width {
+  width: 65%;
+}.light-img {
+  bottom: 241px;
+  left: 335px;
+}.Nft-main-p {
+  width: 65%;
+}.Nft-p {
+  width: 65%;
+}.mobile-text-h {
+  width: 83%;
+  margin-bottom: 30px;
+}.activeClass {
+  font-size: 20px;
+  opacity: 1;
+  translate: -50px 0px;
+  transition: 1s;
+}.token-text {
+  left: -7px;
+  bottom: -6px;
+}.border-left-advi {
+  left: 148px;
+  top: 45px;
+}.advi-Img-animat {
+  position: absolute;
+  left: 10px;
+  animation: movingBtT 4s ease-in-out infinite;
+}@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 100px;
+  }
+}.advi-p-animat {
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+  position: absolute;
+  top: 140px;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 150px;
+  }
+}
+}
+
+@media (min-width:993px) and (max-width: 1023px) {
+  .banner-2nd{
+    height: 60vh;
+  }.light-img img{
+    width: 70%;
+  }.light-img {
+    bottom: 432px;
+    left: 377px;
+}.banner-h-p {
+  padding-top: 100px;
+}.Nft-main-p {
+  width: 70%;
+}.Nft-p {
+  width: 70%;
+}.activeClass {
+  font-size: 20px;
+  opacity: 1;
+  translate: -50px 0px;
+  transition: 1s;
+}
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner-2nd{
+    height: 60vh;
+  }.light-img img{
+    width: 70%;
+  }.light-img {
+    bottom: 455px;
+    left: 377px;
+}.banner-h-p {
+  padding-top: 100px;
+}.Nft-main-p {
+  width: 75%;
+}.Nft-p {
+  width: 70%;
+}.activeClass {
+  font-size: 20px;
+  opacity: 1;
+  translate: -50px 0px;
+  transition: 1s;
+}.mobile-text-h {
+  width: 56%;
+  margin-bottom: -200px;
+}.circle-Bottom-Ani-m {
+  animation: showHide 5s ease-in-out infinite;
+  bottom: -70px;
+  left: 150px;
+}.optimize-h {
+  top: 0px;
+  left: 120px;
+}.gradient-left {
+  background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+  width: 100%;
+  height: 330vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}.input-footer-main {
+  width: 730px;
+}.input-footer{
+  width: 490px;
+}  .advi-h-animat {
+  animation: movingLeftToRight 4s ease-in-out infinite forwards;
+  top: -40px;
+}
+
+@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 50px;
+  }
+} .advi-p-animat {
+  top: -20px;
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 100px;
+  }
+}
+}
+
+@media (min-width:481px) and (max-width: 767px) {
+  .input-footer-main {
+    width: 400px;
+    height: 45px;
+  }
+
+  .input-footer {
+    width: 200px;
+  }
+
+  .input-btn {
+    width: 100px;
+    height: 37px;
+  }
+.gradient-left {
+  background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+  width: 100%;
+  height: 420vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  .banner-2nd{
+  height: 80vh;
+}.light-img img{
+  width: 90%;
+}.light-img {
+  bottom: 455px;
+  left: 330px;
+}.banner-h-p {
+padding-top: 20px;
+}
+.banner-width{
+  width: 71%;
+}.Nft-main-p {
+  width: 80%;
+}.Nft-p {
+  width: 80%;
+}.Nft-icon1-p {
+  width: 62%;
+}.Nft-icon4-p {
+  width: 62%;
+}.activeClass {
+  font-size: 20px;
+  opacity: 1;
+  translate: 0px 0px;
+  transition: 1s;
+}.mobile-text-h {
+  width: 83%;
+  margin-bottom: 0px;
+} .border-right-advi-m {
+  left: 140px;
+  top: 25px;
+  transition: 1s;
+} .team1-img-advi {
+  left: 25px;
+  top: 50px;
+  transition: 1s;
+  width: 35%;
+  animation: movingBtT 4s ease-in-out infinite;
+}
+
+@keyframes movingBtT {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  75% {
+    top: 35px;
+  }
+
+  100% {
+    top: -100px;
+  }
+}  .advi-p-animat {
+  top: 240px;
+  animation: movingLtRpara 4s ease-in-out infinite forwards;
+}
+
+@keyframes movingLtRpara {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 100px;
+  }
+} .advi-h-animat {
+  animation: movingLeftToRight 4s ease-in-out infinite forwards;
+  top: 100px;
+}
+
+@keyframes movingLeftToRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 50px;
+  }
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .input-footer-main {
+    width: 335px;
+    height: 43px;
+  }
+
+  .input-footer {
+    width: 200px;
+  }
+
+  .input-btn {
+    width: 100px;
+    height: 37px;
+  }
+
+  .footer-p {
+    width: 100%;
+  }
+
+  .footer-icon-size {
+    width: 18px;
+    height: 18px;
+  }
+
+  .border-right-advi-m {
+    left: 140px;
+    top: 25px;
+    transition: 1s;
+  }
+
+  .advi-p-animat {
+    top: 240px;
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 100px;
+    }
+  }
+
+  .team1-img-advi {
+    left: 50px;
+    top: 50px;
+    transition: 1s;
+    width: 50%;
+    animation: movingBtT 4s ease-in-out infinite;
+  }
+
+  @keyframes movingBtT {
+    0% {
+      top: 100px;
+    }
+
+    50% {
+      top: 50px;
+    }
+
+    75% {
+      top: 55px;
+    }
+
+    100% {
+      top: -100px;
+    }
+  }
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
+    top: 100px;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 50px;
+    }
+  }
+
+  .gradient-left {
+    background-image: url(http://localhost:3000/static/media/gradient-left.9d4e482….png);
+    width: 100%;
+    height: 420vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .token-main {
+    width: 350px;
+  }
+
+  .circle-Bottom-Ani {
+    animation: showHide 5s ease-in-out infinite;
+    right: -70px;
+    width: 50%;
+    bottom: -70px;
+  }
+
+  .roadmap-circle-top {
+    width: 30%;
+  }
+
+  .token-text {
+    left: -6px;
+    bottom: -6px;
+  }
+
+  .optimize-h {
+    left: 120px;
+  }
+
+  .activeClass {
+    font-size: 16px;
+    opacity: 1;
+    translate: 0px 0px;
+    transition: 1s;
+  }
+
+  .mobile-text-h {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .mobile-top-img {
+    top: 70px;
+  }
+
+  .circle-Bottom-Ani-m {
+    bottom: -60px;
+    left: 140px;
+  }
+
+  .Nft-p {
+    width: 100%;
+  }
+
+  .Nft-icon1-p {
+    width: 77%;
+  }
+
+  .Nft-icon3-h {
+    width: 38%;
+  }
+
+  .Nft-icon4-h {
+    width: 50%;
+  }
+
+  .Nft-icon4-p {
+    width: 84%;
+  }
+
+  .Nft-main-p {
+    width: 100%;
+  }
+
+  /* banner  */
+  .banner-width {
+    width: 90%;
+  }
+
+  .banner-h-p {
+    padding-top: 16px;
+  }
+
+  .person-para {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .banner-2nd {
+    height: 80vh;
+  }
+
+  .light-img {
+    top: 30px;
+    left: 220px;
+
+  }.light-style {
+    top: 100px;
+}.light-img img{
+  width: 100%;
+}
 }
