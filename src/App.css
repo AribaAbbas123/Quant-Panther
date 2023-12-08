@@ -880,6 +880,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   width: 45%;
 }.banner-2nd{
   height: 30vh;
+}.gradient-left {
+  background-image: url(/src/assets/images/gradient-left.png);
+  width: 100%;
+  height: 310vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 }
 @media (min-width :1301px) and (max-width: 1440px) {
