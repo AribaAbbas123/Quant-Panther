@@ -9,16 +9,16 @@ const Footer = () => {
       <div className='footer-gradient'>
         <div className='px-5 lg:px-20 md:px-10-20 pt-14 lg:pt-36'>
 
-          <div className='flex justify-between flex-wrap pb-16'>
+          <div className='flex lg:justify-between flex-wrap pb-16'>
 
             <div className='grow'>
               <h1 className='text-white bold text-2xl lg:text-4xl'>Reach U<span className='text-purple'>s Now</span></h1>
               <div className='flex flex-col'>
-                <div>  <form className='flex justify-end gap-4 input-footer-main my-5 lg:my-14'>
+                <form className='flex justify-end gap-4 input-footer-main my-5 lg:my-14'>
                   <input type='email' required className='input-footer my-4' />
                   <div className='input-btn-main'><button type='submit' className='mt-1 mr-1 px-4 lg:px-10 py-2 lg:py-3 bg-black text-white input-btn'>Send</button></div>
-                </form></div>
-                <div className='flex justify-between lg:justify-between md:justify-between gap-3 lg:gap-0 md:gap-0'>
+                </form>
+                <div className='flex justify-between lg:justify-between md:justify-between gap-4 lg:gap-0 md:gap-0'>
                   {/* 1 */}
                   <div className='flex gap-4 flex-col footer-icon'>
                     <FaLinkedinIn className='footer-icon-size' />
@@ -42,11 +42,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='flex items-center justify-center flex-wrap'>
+            <div className='flex items-center justify-center flex-wrap flex-col lg:flex-row md:flex-col '>
 
               {/* 4 */}
-              <div className='flex order-1 lg:order-none md:order-none'>
-                <p className='bold text-white text-[29px]'>Powered By</p>
+              <div className='flex order-1 lg:order-none md:order-1'>
+                <p className='bold text-white lg:text-[29px] md:text-base'>Powered By</p>
               </div>
               <img src={footerImg} />
             </div>

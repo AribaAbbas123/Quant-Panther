@@ -1356,6 +1356,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
     100% {
       top: -400px;
     }
+  }.footer-p{
+    width: 80%;
   }
 }
 
@@ -1363,6 +1365,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   .input-footer-main {
     width: 400px;
     height: 45px;
+  }
+  .footer-p{
+    width: 100%;
   }
 
   .input-footer {
