@@ -79,7 +79,7 @@ const Advisors = () => {
         {/* largeScreen */}
         <div className='largeScreen'>
             
-        <div className='px-5 lg:px-20 md:px-10 py-20'>
+        <div className='px-5 lg:px-20 md:px-10 pt-5 lg:pt-20 md:pt-10 '>
                 <h1 className='text-white bold text-[25px] lg:text-[55px] md:text-[35px]'>Advis<span className='text-purple'>ors</span></h1>
              <div className='py-5 lg:py-20 md:py-10'>
              <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1'>
