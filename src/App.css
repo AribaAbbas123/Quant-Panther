@@ -31,7 +31,8 @@ body {
   animation: shadowChange infinite 6s;
 
 }
-.shadow-padding{
+
+.shadow-padding {
   padding-top: 56px;
 }
 
@@ -192,6 +193,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 .circle-Bottom-Ani {
   animation: showHide 5s ease-in-out infinite;
   right: -20px;
+  bottom: -35px;
+}
+
+.circle-Bottom-Ani-road {
+  animation: showHide 5s ease-in-out infinite;
+  left: -20px;
   bottom: -35px;
 }
 
@@ -559,16 +566,16 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   }
 }
 
+.img-body {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
 .advi-Img-animat {
   position: absolute;
   left: 50px;
   animation: movingBtT 4s ease-in-out infinite;
-}
-
-.img-body {
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
 }
 
 @keyframes movingBtT {
@@ -737,13 +744,16 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
 .Nft-main-p {
   width: 35%;
 }
-.token-main-tab{
+
+.token-main-tab {
   width: 400px;
 }
-.Marketing-tab{
+
+.Marketing-tab {
   margin-right: 0px;
   color: #C4B99E;
 }
+
 .Marketing-shadow-tab {
   transition: 0.5s;
 }
@@ -868,6 +878,11 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   box-shadow: 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00, 0px 4px 4px 0px #DBFF00;
 }
 
+.roadmap-circle-top {
+  top: 0;
+  right: 0;
+}
+
 /* iska upr upr  */
 /* @media only screen and (min-width: 1600px) { 
 
@@ -877,265 +892,471 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
   .mobile-text-h {
     width: 59%;
     margin-bottom: -200px;
-}.Nft-main-p {
-  width: 45%;
-}.banner-2nd{
-  height: 30vh;
-}
-}
-@media (min-width :1301px) and (max-width: 1440px) {
-  .banner-2nd{
+  }
+
+  .Nft-main-p {
+    width: 45%;
+  }
+
+  .banner-2nd {
     height: 30vh;
-  }.banner-width {
+  }
+}
+
+@media (min-width :1301px) and (max-width: 1440px) {
+  .banner-2nd {
+    height: 30vh;
+  }
+
+  .banner-width {
     width: 65%;
-}.light-img {
-  bottom: 290px;
-  left: 410px;
-}
-.light-img img{
-  width: 80%;
-}.Nft-main-p {
-  width: 45%;
-}
-.advi-h-animat {
-  animation: movingLeftToRight 4s ease-in-out infinite forwards;
-  top: 100px;
-}
-
-@keyframes movingLeftToRight {
-  from {
-    left: 0px;
   }
 
-  to {
-    left: 200px;
-  }
-}
-.advi-p-animat {
-  animation: movingLtRpara 4s ease-in-out infinite forwards;
-  position: absolute;
-  top: 140px;
-}
-
-@keyframes movingLtRpara {
-  0% {
-    left: 0px;
+  .light-img {
+    bottom: 290px;
+    left: 410px;
   }
 
-  100% {
-    left: 300px;
+  .light-img img {
+    width: 80%;
   }
-}.mobile-text-h {
-  width: 65%;
-}
+
+  .Nft-main-p {
+    width: 45%;
+  }
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
+    top: 100px;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 200px;
+    }
+  }
+
+  .advi-p-animat {
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+    position: absolute;
+    top: 140px;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 250px;
+    }
+  }
+
+  .mobile-text-h {
+    width: 65%;
+  }
+
+  .team1:hover .team1-main.border-right-h {
+    left: 160px;
+    top: -5px;
+  }
 
 }
+
 @media (min-width :1201px) and (max-width: 1300px) {
-  .banner-2nd{
+  .banner-2nd {
     height: 40vh;
-  }.banner-width {
+  }
+
+  .banner-width {
     width: 65%;
-}.light-img {
-  bottom: 245px;
-  left: 372px;
-}
-.light-img img{
-  width: 80%;
-}.advi-h-animat {
-  animation: movingLeftToRight 4s ease-in-out infinite forwards;
-  top: 100px;
-}.Nft-main-p {
-  width: 55%;
-}
-
-@keyframes movingLeftToRight {
-  from {
-    left: 0px;
   }
 
-  to {
-    left: 200px;
-  }
-}
-.advi-p-animat {
-  animation: movingLtRpara 4s ease-in-out infinite forwards;
-  position: absolute;
-  top: 140px;
-}
-
-@keyframes movingLtRpara {
-  0% {
-    left: 0px;
+  .light-img {
+    bottom: 245px;
+    left: 372px;
   }
 
-  100% {
-    left: 250px;
+  .light-img img {
+    width: 80%;
   }
-}.border-right-h {
-  left: 166px;
-  top: -5px;
-  transition: 1s;
-}.border-right-h-3 {
-  left: 168px;
-  top: -5px;
-  transition: 1s;
-}.mobile-text-h {
-  width: 66%;
-  margin-bottom: -200px;
-}.team1:hover .team1-main.border-right-h {
-  left: 185px;
-  top: -5px;
-}.token-text {
-  left: -10px;
-  bottom: -10px;
-}
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
+    top: 100px;
+  }
+
+  .Nft-main-p {
+    width: 55%;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 200px;
+    }
+  }
+
+  .advi-p-animat {
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+    position: absolute;
+    top: 140px;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 250px;
+    }
+  }
+
+  .border-right-h {
+    left: 172px;
+    top: -5px;
+    transition: 1s;
+  }
+
+  .border-right-h-3 {
+    left: 172px;
+    top: -5px;
+    transition: 1s;
+  }
+
+  .mobile-text-h {
+    width: 66%;
+    margin-bottom: -200px;
+  }
+
+  .team1:hover .team1-main.border-right-h {
+    left: 185px;
+    top: -5px;
+  }
+
+  .token-text {
+    left: -10px;
+    bottom: -10px;
+  }
 
 
 }
 
 @media (min-width:1024px) and (max-width: 1200px) {
-  .banner-2nd{
+  .banner-2nd {
     height: 60vh;
-  }.banner-h-p {
+  }
+
+  .banner-h-p {
     padding-top: 60px;
   }
-.light-img img{
-  width: 70%;
-}.banner-width {
-  width: 65%;
-}.light-img {
-  bottom: 241px;
-  left: 335px;
-}.Nft-main-p {
-  width: 65%;
-}.Nft-p {
-  width: 65%;
-}.mobile-text-h {
-  width: 83%;
-  margin-bottom: 30px;
-}.activeClass {
-  font-size: 20px;
-  opacity: 1;
-  translate: -50px 0px;
-  transition: 1s;
-}.token-text {
-  left: -7px;
-  bottom: -6px;
-}.border-left-advi {
-  left: 148px;
-  top: 45px;
-}.advi-Img-animat {
-  position: absolute;
-  left: 10px;
-  animation: movingBtT 4s ease-in-out infinite;
-}@keyframes movingLeftToRight {
-  from {
-    left: 0px;
+
+  .light-img img {
+    width: 70%;
   }
 
-  to {
-    left: 100px;
-  }
-}.advi-p-animat {
-  animation: movingLtRpara 4s ease-in-out infinite forwards;
-  position: absolute;
-  top: 140px;
-}
-
-@keyframes movingLtRpara {
-  0% {
-    left: 0px;
+  .banner-width {
+    width: 65%;
   }
 
-  100% {
-    left: 150px;
+  .light-img {
+    bottom: 241px;
+    left: 335px;
   }
-}
+
+  .Nft-main-p {
+    width: 65%;
+  }
+
+  .Nft-p {
+    width: 65%;
+  }
+
+  .mobile-text-h {
+    width: 83%;
+    margin-bottom: 30px;
+  }
+
+  .activeClass {
+    font-size: 20px;
+    opacity: 1;
+    translate: -50px 0px;
+    transition: 1s;
+  }
+
+  .token-text {
+    left: -7px;
+    bottom: -6px;
+  }
+
+  .border-left-advi {
+    left: 148px;
+    top: 45px;
+  }
+
+  .advi-Img-animat {
+    position: absolute;
+    left: 10px;
+    animation: movingBtT 4s ease-in-out infinite;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 100px;
+    }
+  }
+
+  .advi-p-animat {
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+    position: absolute;
+    top: 140px;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 150px;
+    }
+  }
+
+  .border-right-h {
+    left: 142px;
+    top: -5px;
+    transition: 1s;
+  }
+
+  .border-right-h-3 {
+    left: 152px;
+    top: -5px;
+    transition: 1s;
+  }
+
+  .mobile-text-h {
+    width: 66%;
+    margin-bottom: -200px;
+  }
+
+  .team1:hover .team1-main.border-right-h {
+    left: 160px;
+    top: -5px;
+  }
+
+  .team1:hover .team1-main.border-right-h-3 {
+    left: 140px;
+    top: -5px;
+  }
 }
 
 @media (min-width:993px) and (max-width: 1023px) {
-  .banner-2nd{
+  .banner-2nd {
     height: 60vh;
-  }.light-img img{
+  }
+
+  .light-img img {
     width: 70%;
-  }.light-img {
+  }
+
+  .light-img {
     bottom: 432px;
     left: 377px;
-}.banner-h-p {
-  padding-top: 100px;
-}.Nft-main-p {
-  width: 70%;
-}.Nft-p {
-  width: 70%;
-}.activeClass {
-  font-size: 20px;
-  opacity: 1;
-  translate: -50px 0px;
-  transition: 1s;
-}
+  }
+
+  .banner-h-p {
+    padding-top: 100px;
+  }
+
+  .Nft-main-p {
+    width: 70%;
+  }
+
+  .Nft-p {
+    width: 70%;
+  }
+
+  .activeClass {
+    font-size: 20px;
+    opacity: 1;
+    translate: -50px 0px;
+    transition: 1s;
+  }
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
+    top: -40px;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 100px;
+    }
+  }
+
+  .advi-p-animat {
+    top: -20px;
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 100px;
+    }
+  }
+
+  .advi-Img-animat {
+    animation: movingBtT 4s ease-in-out infinite;
+  }
+
+  @keyframes movingBtT {
+    0% {
+      top: 170px;
+    }
+
+    50% {
+      top: 50px;
+    }
+
+    75% {
+      top: 55px;
+    }
+
+    100% {
+      top: -400px;
+    }
+  }
 }
 
 /* Small screens, laptops */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .banner-2nd{
+  .banner-2nd {
     height: 60vh;
-  }.light-img img{
+  }
+
+  .light-img img {
     width: 70%;
-  }.light-img {
+  }
+
+  .light-img {
     bottom: 455px;
     left: 377px;
-}.banner-h-p {
-  padding-top: 100px;
-}.Nft-main-p {
-  width: 75%;
-}.Nft-p {
-  width: 70%;
-}.activeClass {
-  font-size: 20px;
-  opacity: 1;
-  translate: -50px 0px;
-  transition: 1s;
-}.mobile-text-h {
-  width: 56%;
-  margin-bottom: -200px;
-}.circle-Bottom-Ani-m {
-  animation: showHide 5s ease-in-out infinite;
-  bottom: -70px;
-  left: 150px;
-}.optimize-h {
-  top: 0px;
-  left: 120px;
-}.input-footer-main {
-  width: 730px;
-}.input-footer{
-  width: 490px;
-}  .advi-h-animat {
-  animation: movingLeftToRight 4s ease-in-out infinite forwards;
-  top: -40px;
-}
-
-@keyframes movingLeftToRight {
-  from {
-    left: 0px;
   }
 
-  to {
-    left: 50px;
-  }
-} .advi-p-animat {
-  top: -20px;
-  animation: movingLtRpara 4s ease-in-out infinite forwards;
-}
-
-@keyframes movingLtRpara {
-  0% {
-    left: 0px;
+  .banner-h-p {
+    padding-top: 100px;
   }
 
-  100% {
-    left: 100px;
+  .Nft-main-p {
+    width: 75%;
   }
-}
+
+  .Nft-p {
+    width: 70%;
+  }
+
+  .activeClass {
+    font-size: 20px;
+    opacity: 1;
+    translate: -50px 0px;
+    transition: 1s;
+  }
+
+  .mobile-text-h {
+    width: 56%;
+    margin-bottom: -200px;
+  }
+
+  .circle-Bottom-Ani-m {
+    animation: showHide 5s ease-in-out infinite;
+    bottom: -70px;
+    left: 150px;
+  }
+
+  .optimize-h {
+    top: 0px;
+    left: 120px;
+  }
+
+  .input-footer-main {
+    width: 730px;
+  }
+
+  .input-footer {
+    width: 490px;
+  }
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
+    top: -40px;
+  }
+
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
+
+    to {
+      left: 100px;
+    }
+  }
+
+  .advi-p-animat {
+    top: -20px;
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 100px;
+    }
+  }
+
+  .advi-Img-animat {
+    animation: movingBtT 4s ease-in-out infinite;
+  }
+
+  @keyframes movingBtT {
+    0% {
+      top: 170px;
+    }
+
+    50% {
+      top: 50px;
+    }
+
+    75% {
+      top: 55px;
+    }
+
+    100% {
+      top: -400px;
+    }
+  }
 }
 
 @media (min-width:481px) and (max-width: 767px) {
@@ -1152,88 +1373,124 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(144,17,178,1) 100%); 
     width: 100px;
     height: 37px;
   }
-  .banner-2nd{
-  height: 80vh;
-}.light-img img{
-  width: 90%;
-}.light-img {
-  bottom: 455px;
-  left: 330px;
-}.banner-h-p {
-padding-top: 20px;
-}
-.banner-width{
-  width: 71%;
-}.Nft-main-p {
-  width: 80%;
-}.Nft-p {
-  width: 80%;
-}.Nft-icon1-p {
-  width: 62%;
-}.Nft-icon4-p {
-  width: 62%;
-}.activeClass {
-  font-size: 20px;
-  opacity: 1;
-  translate: 0px 0px;
-  transition: 1s;
-}.mobile-text-h {
-  width: 83%;
-  margin-bottom: 0px;
-} .border-right-advi-m {
-  left: 140px;
-  top: 25px;
-  transition: 1s;
-} .team1-img-advi {
-  left: 25px;
-  top: 50px;
-  transition: 1s;
-  width: 35%;
-  animation: movingBtT 4s ease-in-out infinite;
-}
 
-@keyframes movingBtT {
-  0% {
+  .banner-2nd {
+    height: 80vh;
+  }
+
+  .light-img img {
+    width: 90%;
+  }
+
+  .light-img {
+    bottom: 455px;
+    left: 330px;
+  }
+
+  .banner-h-p {
+    padding-top: 20px;
+  }
+
+  .banner-width {
+    width: 71%;
+  }
+
+  .Nft-main-p {
+    width: 80%;
+  }
+
+  .Nft-p {
+    width: 80%;
+  }
+
+  .Nft-icon1-p {
+    width: 62%;
+  }
+
+  .Nft-icon4-p {
+    width: 62%;
+  }
+
+  .activeClass {
+    font-size: 20px;
+    opacity: 1;
+    translate: 0px 0px;
+    transition: 1s;
+  }
+
+  .mobile-text-h {
+    width: 83%;
+    margin-bottom: 0px;
+  }
+
+  .border-right-advi-m {
+    left: 140px;
+    top: 25px;
+    transition: 1s;
+  }
+
+  .team1-img-advi {
+    left: 25px;
+    top: 50px;
+    transition: 1s;
+    width: 35%;
+    animation: movingBtT 4s ease-in-out infinite;
+  }
+
+  @keyframes movingBtT {
+    0% {
+      top: 100px;
+    }
+
+    50% {
+      top: 30px;
+    }
+
+    75% {
+      top: 35px;
+    }
+
+    100% {
+      top: -100px;
+    }
+  }
+
+  .advi-p-animat {
+    top: 240px;
+    animation: movingLtRpara 4s ease-in-out infinite forwards;
+  }
+
+  @keyframes movingLtRpara {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 100px;
+    }
+  }
+
+  .advi-h-animat {
+    animation: movingLeftToRight 4s ease-in-out infinite forwards;
     top: 100px;
   }
 
-  50% {
-    top: 30px;
-  }
+  @keyframes movingLeftToRight {
+    from {
+      left: 0px;
+    }
 
-  75% {
-    top: 35px;
-  }
-
-  100% {
-    top: -100px;
-  }
-}  .advi-p-animat {
-  top: 240px;
-  animation: movingLtRpara 4s ease-in-out infinite forwards;
-}
-
-@keyframes movingLtRpara {
-  0% {
-    left: 0px;
-  }
-
-  100% {
-    left: 100px;
-  }
-} .advi-h-animat {
-  animation: movingLeftToRight 4s ease-in-out infinite forwards;
-  top: 100px;
-}
-
-@keyframes movingLeftToRight {
-  from {
-    left: 0px;
-  }
-
-  to {
-    left: 50px;
-  }
+    to {
+      left: 50px;
+    }
+  }.circle-Bottom-Ani-road {
+    animation: showHide 5s ease-in-out infinite;
+    left: -74px;
+    bottom: -35px;
+    width: 50%;
+}.token-text {
+  left: -11px;
+  bottom: -10px;
 }
 }
 
@@ -1322,6 +1579,7 @@ padding-top: 20px;
       left: 50px;
     }
   }
+
   .token-main {
     width: 350px;
   }
@@ -1413,9 +1671,13 @@ padding-top: 20px;
     top: 30px;
     left: 220px;
 
-  }.light-style {
+  }
+
+  .light-style {
     top: 100px;
-}.light-img img{
-  width: 100%;
-}
+  }
+
+  .light-img img {
+    width: 100%;
+  }
 }

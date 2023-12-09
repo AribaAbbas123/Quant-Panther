@@ -20,7 +20,7 @@ const Partners = () => {
             <h1 className='text-white text-[55px] bold text-center'>Partners & B<span className='text-purple'>ackers</span></h1>
             <div className='px-5 lg:px-20 md:px-10 py-20'>
             
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between flex-wrap'>
                         {/* 1 */}
                         <div className='flex items-center text-center flex-col gap-1.5 partner-1'>
                             <img src={partner1} />
