@@ -82,7 +82,7 @@ const Token = () => {
             {/* smallScreen-token */}
             <div className='smallScreen-token'>
               {/* 1st row  */}
-              <div className='flex justify-between pt-4'>
+              <div className='flex justify-between pt-4 gap-4'>
                 {/* 1 */}
                 <div className='flex gap-3 flex-col lg:text-end token-main-tab team ms-0 lg:ms-auto md:ms-0'>
                   <p className='text-xs lg:text-base semiBold pr-[14px]'>Team</p>
@@ -95,7 +95,7 @@ const Token = () => {
                 </div>
               </div>
               {/* 2nd row */}
-              <div className='flex justify-between pt-4'>
+              <div className='flex justify-between pt-4 gap-4'>
                 {/* 3 */}
                 <div className='flex gap-3 flex-col token-main-tab Bounty-tab ms-0 lg:ms-auto md:ms-0'>
                   <p className='text-xs lg:text-base semiBold pr-[14px]'>Bounty</p>
@@ -108,7 +108,7 @@ const Token = () => {
                 </div>
               </div>
               {/* 3rd row  */}
-              <div className='flex justify-between pt-4'>
+              <div className='flex justify-between pt-4 gap-4'>
                 {/* 5 */}
                 <div className='flex gap-3 flex-col lg:text-end token-main-tab Ecosystem-tab ms-0 lg:ms-auto md:ms-0'>
                   <p className='text-xs lg:text-base semiBold pr-[14px]'>Ecosystem</p>
@@ -121,7 +121,7 @@ const Token = () => {
                 </div>
               </div>
               {/* 4th row  */}
-              <div className='flex justify-between pt-4'>
+              <div className='flex justify-between pt-4 gap-4'>
                 {/* 7 */}
                 <div className='flex gap-3 flex-col lg:text-end token-main-tab Product-Development-tab ms-0 lg:ms-auto md:ms-0'>
                   <p className='text-xs lg:text-base semiBold pr-[14px]'>Product Development</p>

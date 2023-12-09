@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='footer-gradient'>
         <div className='px-5 lg:px-20 md:px-10-20 pt-14 lg:pt-36'>
 
-          <div className='flex lg:justify-between flex-wrap pb-16'>
+          <div className='flex justify-center flex-wrap pb-16'>
 
             <div className='grow'>
               <h1 className='text-white bold text-2xl lg:text-4xl'>Reach U<span className='text-purple'>s Now</span></h1>

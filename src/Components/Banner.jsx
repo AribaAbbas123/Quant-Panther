@@ -81,9 +81,9 @@ const Banner = () => {
             </div>
 
             <div className='text-pClr leading-normal flex justify-end flex-col '>
-              <p className='semiBold text-[11px] lg:text-[22px] md:text-[11px]'>A newbie to Crypto? Afraid of losing all your money? A veteran trader? Yet, making uninformed trading decisions too often?</p>
-              <p className='regular text-[11px] lg:text-base md:text-[11px] py-3'> We know that you are tired of making these random trading decisions, as such, we are bringing to you the first AI based "One-stop-Trading Destination" to guard your exposure in the crypto market by analysing the market sentiments in Real Time while automating your Trading strategies</p>
-              <p className='regular text-[11px] lg:text-base md:text-[11px]'> Founded by an innovative team with over 37 years of combined experience in Cryptocurrency and Blockchain Technology, Panther Quant also offers tradable NFTs as incentives for successful trading strategies. Trade with an edge!</p>
+              <p className='semiBold text-xs lg:text-[22px] md:text-xs'>A newbie to Crypto? Afraid of losing all your money? A veteran trader? Yet, making uninformed trading decisions too often?</p>
+              <p className='regular text-xs lg:text-base md:text-xs py-3'> We know that you are tired of making these random trading decisions, as such, we are bringing to you the first AI based "One-stop-Trading Destination" to guard your exposure in the crypto market by analysing the market sentiments in Real Time while automating your Trading strategies</p>
+              <p className='regular text-xs lg:text-base md:text-xs'> Founded by an innovative team with over 37 years of combined experience in Cryptocurrency and Blockchain Technology, Panther Quant also offers tradable NFTs as incentives for successful trading strategies. Trade with an edge!</p>
             </div>
           </div>
 
